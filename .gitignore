@@ -113,3 +113,8 @@ GitHub.sublime-settings
 3D_animation.gif
 
 .DS_Store
+
+examples/socket_client.py
+examples/socket_server.py
+
+*.zip
