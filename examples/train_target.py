@@ -33,7 +33,7 @@ env = gym.wrappers.FlattenObservation(env)  # Optional, if using Dict obs
 checkpoint_callback = CheckpointCallback(
     save_freq=100_000,
     save_path="./ppo_checkpoints/",
-    name_prefix="ppo_gymnavenv"
+    name_prefix="ppo_gymnavenv_test"
 )
 
 # --- Train with Stable Baselines3 and checkpointing ---

@@ -17,7 +17,7 @@ otter = Otter(
     control=HeadingAutopilotTwoThrusters(
         actuators=[Thruster(xy=(0, 0.395), **vars(thruster_params)), Thruster(xy=(0, -0.395), **vars(thruster_params))],
         dt=dt,
-        tau_X=200
+        tau_X=100
     ),
     guidance=Guidance(desired_heading=100*DEG2RAD),
     actuators=[Thruster(xy=(0, 0.395), **vars(thruster_params)), Thruster(xy=(0, -0.395), **vars(thruster_params))]
@@ -29,7 +29,7 @@ env = NavEnv(
     obstacles=[],
     dt=dt,
     current=Current(beta=-30.0*DEG2RAD, v=0.3),
-    render_mode=None #"human3d"
+    render_mode="human"
 )
 
 sim = Simulator(env)
