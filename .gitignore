@@ -116,5 +116,11 @@ GitHub.sublime-settings
 
 examples/socket_client.py
 examples/socket_server.py
+/examples/shape_client.py
+/examples/shape_input.py
+/examples/shape_server.py
 
 *.zip
+
+/ppo_checkpoints
+/ppo_tensorboard
