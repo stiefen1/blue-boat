@@ -14,7 +14,7 @@ thruster_params = OtterThrusterParameters()
 otter = Otter(
     OtterParameters(),
     dt,
-    actuators=[Thruster(xy=(0, 0.395), **vars(thruster_params)), Thruster(xy=(0, -0.395), **vars(thruster_params))],
+    actuators=[Thruster(xy=(0, 0.395), **vars(thruster_params), dt=dt), Thruster(xy=(0, -0.395), **vars(thruster_params), dt=dt)],
     navigation=NavigationTOF(
         tof_params={
             "range": 50,
